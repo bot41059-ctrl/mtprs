@@ -1,0 +1,38 @@
+{
+  "name": "Ultimate Video Downloader Bot",
+  "description": "All-in-One Telegram Video & DRM Stream Downloader Bot (Classplus DRM/NDRM, PW, YouTube, M3U8, MPD, Batch .txt)",
+  "keywords": [
+    "telegram",
+    "video-downloader",
+    "classplus-drm",
+    "m3u8",
+    "mpd",
+    "pyrogram",
+    "yt-dlp"
+  ],
+  "stack": "container",
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID from my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Your Telegram API HASH from my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token from @BotFather",
+      "required": true
+    },
+    "WEBHOOK": {
+      "description": "Keep True to run the web server",
+      "value": "True",
+      "required": false
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1
+    }
+  }
+}
